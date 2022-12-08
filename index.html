@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+    <title>My Brand</title>
 </head>
+
 <body>
     <div class="header">
         <nav>
             <span class="logo">ba</span>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Services</li>
-                <li>Contact Me</li>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
             </ul>
         </nav>
     </div>
-    <div>
+    <section id="home">
         <div class="right">
-            <img src="/imgs/img1.jpg" alt="profile-image">
+            <div class="right-img">
+                <img src="imgs/img1.jpg" alt="profile-image">
+            </div>
         </div>
         <div class="left">
             <div class="social-media-icons">
@@ -34,29 +38,73 @@
             <div class="content">
                 <h4>Hi, I'am Lambert</h4>
                 <p>Software Developer </br> User friendy,
-                problem solving and  </br>industry leading apps for </br> businesses,
-                communities and </br> personal use.</p>
+                    problem solving and </br>industry leading apps for </br> businesses,
+                    communities and </br> personal use.</p>
             </div>
         </div>
-    </div>
-    <div class="about-me">
-        <div class="about-me-title"><h1>About-Me</h1></div>
+    </section>
+    <section id="about">
+        <div class="about-me">
+            <div class="about-me-title">
+                <h1>About-Me</h1>
+            </div>
+
+            <div class="about-img">
+                <img src="imgs/img1.jpg" alt="profile-image">
+            </div>
+            <div class="about-content">
+                <p>Web & Mobile Applications developer who</br> is interested in learning new technologies every
+                    day,</br>
+                    with extensive knowledge, professional and quality</br> work, innovative ideas just to meet and
+                    exceed
+                    your </br>expectations.</p>
+                <div class="experience">
+                    <span>Years of experience</span>
+                    <p>+1</p>
+                    <span>Complete Projects</span>
+                    <p>+3</p>
+                    <span>Programming stack</span>
+                    <p>+5</p>
+                </div>
+
+            </div>
+            <button>Download CV</button>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>this is skills page</h1>
+    </section>
+    <section id="services">
+        <h3>Services</h3>
+        <span>What I can Help Your business to achieve</span>
+        <div class="services">
+            <div class="card1">
+                <p>Front-End Development</p>
+            </div>
+            <div class="card2">
+                <p>Back-end Development</p>
+            </div>
+            <div class="card3">
+                <p>Web-Services && Technical Services</p>
+            </div>
+        </div>
+    </section>
+    <section id="contactMe">
+        <h1><u>Get In Touch</u></h1>
+            <span>Talk to me, I am here for you ...</span>
+        <div class="contactme-right">
+            <form action="post">
+            <label>
+                Email
+                <input type="text">
+            </label>
+        </form>
+        </div>
+        <div class="contactme-left">
+
+        </div>
         
-        <div class="about-img">
-            
-            <img src="/imgs/img1.jpg" alt="profile-image">
-        </div>
-        <div class="about-content">
-            <p>Web & Mobile Applications developer who</br> is interested in learning new technologies every day,</br> with extensive knowledge, professional and quality</br> work, innovative ideas just to meet and exceed your </br>expectations.</p> 
-        <div class="experience">
-            <span>Years of experience</span>
-            <p>+1</p>
-            <span>Complete Projects</span>
-            <p>+3</p>
-            <span>Programming stack</span>
-            <p>+5</p>
-        </div>
-        </div>
-    </div>
+    </section>
 </body>
+
 </html>

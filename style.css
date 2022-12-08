@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: 'batman-forever';
     src: url(fonts/batmfa__.ttf);
@@ -6,41 +13,45 @@
     font-family: 'monda';
     src: url(fonts/Monda-Regular.ttf);
 }
-body{
-    scrollbar-width:none;
-}
-.header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    height: 110px;
-    z-index: 1;
+.header{
+    
 }
 nav{
+    height: 50px;
     width: 100%;
     background-color: #596CB3;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position:fixed;
+    z-index: 1;
 }
-.logo{
-    margin-right: 50px;
-    font-size: 76px;
-    color: white;
-    padding-left: 100px;
-    font-family: 'batman-forever';
-}
+
 ul li{
     display: inline;
-    padding: 50px;
-    color: white;
-    font-size: 25px;
+    padding: 20px;
+    font-size: 20px;
     cursor: pointer;
-    padding-left: 50px;
+}
+li a{
+    padding-right: 30px;
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-family: 'batman-forever';
+    font-size: 30px;
+    color: white;
+    margin-left: 100px;
+}
+section{
+    width: 100%;
+    margin: 0;
+    height: 100vh;
 }
 .right{
-    margin-top: 130px;
+    margin-top: 120px;
     margin-right: 100px;
     float: right;
     position: relative; 
@@ -52,27 +63,29 @@ ul li{
 .right img{
     width: 100%; 
     height: auto;
+
 }
-.social-media-icons{
-    margin-left: 10px;
-}
+
 .content{
-    margin-left: 100px;
+    margin-left: 250px;
 }
 .content h4{
     font-family: 'batman-forever';
     font-size: 40px;
+    padding-top: 230px;
 }
 .content p{
     font-size: 25px;
     font-family: 'monda';
 }
-.left{
-    margin-top: 150px;
-    float: left;
-    margin-left: 100px;
+.social-media-icons{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    font-size: 200%;
+    align-items: center;
+    float: left;
+    margin-top: 150px;
+    margin-left: 100px;
 }
 .fa:hover {
     opacity: 0.9;
@@ -103,36 +116,131 @@ ul li{
     display: block;
     border-radius: 50%;
 }
+#about{
+    padding-top: 30px;
+}
 .about-me{
 
 }
 .about-me-title{
     font-family: 'batman-forever';
     color: #596CB3;
+    padding-left: 45%;
     font-size: 30px;
-    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 .about-me img{
+    padding-top: 30px;
     float: left;
-    width: 300px;
-    height: 400px;
-    margin-left: 200px;
+    width: 200px;
+    height: 300px;
+    padding-left: 150px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .about-content{
+    padding-top:30px;
     float: right;
     font-family: 'monda';
     margin-left: 100px;
     font-size: 25px;
+    margin-right: 100px;
 }
 .experience{
     display: flex;
     flex-direction: row;
+    padding-top: 40px;
 }
 .experience p{
+    padding-top: 40px;
     font-size: 40px;
     font-family: 'batman-forever';
 }
 .experience span{
     font-size: 20px;
     color: #596CB3;
+    align-items: flex-end;
+}
+button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    align-items: center;
+    background-color: #596CB3;
+    font-family: 'batman-forever';
+    border-radius: 10px;
+    color: white;
+    margin-left: 700px;
+}
+#services h3{
+    font-family: 'batman-forever';
+    font-size: 30px;
+    justify-content: center;
+    color: #596CB3;
+    padding-left: 45%;
+    padding-bottom: 30px;
+    padding-top: 60px;
+}
+#services span{
+    font-family: 'monda';
+    font-size: 20px;
+    padding-left: 37%;
+}
+.services{
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-left: 80px;
+}
+.card1{
+    position: relative;
+    background-color: #596CB3;
+    height: 200px;
+    width: 300px;
+    padding:40px;
+    border-radius: .45rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    transition: .3s;
+}
+.card2{
+    position: relative;
+    background-color: #596CB3;
+    height: 200px;
+    width: 300px;
+    padding:40px;
+    border-radius: .45rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    transition: .3s;
+    margin-left: 10px;
+}
+.card3{
+    position: relative;
+    background-color: #596CB3;
+    height: 200px;
+    width: 300px;
+    padding:40px;
+    border-radius: .45rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    transition: .3s;
+    margin-left: 10px;
+}
+.services p{
+    font-size: 20px;
+    font-family: 'monda';
+    color: white;
+    padding-top: 25px;
+}
+#contactMe h1{
+    font-family: 'batman-forever';
+    font-size: 30px;
+    color: #596CB3;
+    padding-left: 40%;
+    font-style: none;
+    padding-top: 100px;
+}
+#contactMe span{
+    font-family: 'monda';
+    font-size: 30px;
+    padding-left: 40%;
 }
