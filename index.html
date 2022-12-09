@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Brand</title>
@@ -13,6 +14,10 @@
 <body>
     <div class="header">
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
             <span class="logo">ba</span>
             <ul id="menu">
                 <li><a href="#home">Home</a></li>
@@ -59,52 +64,132 @@
                     exceed
                     your </br>expectations.</p>
                 <div class="experience">
-                    <span>Years of experience</span>
-                    <p>+1</p>
-                    <span>Complete Projects</span>
-                    <p>+3</p>
-                    <span>Programming stack</span>
-                    <p>+5</p>
+                    <div class="card4">
+                        <span>Years of experience</span>
+                        <p>+1</p>
+                    </div>
+                    <div class="card4">
+                        <span>Complete Projects</span>
+                        <p>+3</p>
+                    </div>
+                    <div class="card4">
+                        <span>Programming stack</span>
+                        <p>+5</p>
+                    </div>
+
                 </div>
 
             </div>
-            <button>Download CV</button>
+            <button id="button">Download CV</button>
         </div>
     </section>
     <section id="skills">
-        <h1>this is skills page</h1>
+        <h1>Skills</h1>
+        <span>My technical Skills</span>
+        <div class="skills-left">
+            <h3>{}Front-End</h3>
+            <h4>2+ years of experience</h6>
+                <div class="skill">
+                    <div class="progress-bar-container">
+                        <h2>HTML&CSS</h2>
+                        <div class="progress-bar">
+                            <span class="percentage c"></span>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <h2>JavaScript</h2>
+                        <div class="progress-bar">
+                            <span class="percentage java"></span>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container">
+                        <h2>ReactJs</h2>
+                        <div class="progress-bar">
+                            <span class="percentage python"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+        </div>
+        </div>
+        <div class="skills-right">
+            <h3>{}Back-End</h3>
+            <h4>1+ years of experience</h6>
+                <div class="progress-bar-container">
+                    <h2>NodeJS-ExpressJs</h2>
+                    <div class="progress-bar">
+                        <span class="percentage html"></span>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <h2>Ruby on Rails</h2>
+                    <div class="progress-bar">
+                        <span class="percentage css"></span>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <h2>Python-Django</h2>
+                    <div class="progress-bar">
+                        <span class="percentage javascript"></span>
+                    </div>
+                </div>
+        </div>
     </section>
     <section id="services">
         <h3>Services</h3>
         <span>What I can Help Your business to achieve</span>
         <div class="services">
             <div class="card1">
+                <img src="https://cdn.dribbble.com/users/464226/screenshots/8392399/media/0a40d8bded68a741375fd4335c77680a.png?compress=1&resize=400x300"
+                    alt="">
                 <p>Front-End Development</p>
             </div>
             <div class="card2">
+                <img src="https://thumbs.dreamstime.com/b/frontend-seo-backend-icon-simple-thin-line-outline-vector-element-web-design-development-icons-set-ui-ux-website-173035215.jpg"
+                    alt="">
                 <p>Back-end Development</p>
             </div>
             <div class="card3">
+                <img src="https://cdn4.iconfinder.com/data/icons/leto-api/64/__frontend_backend_api-512.png" alt="">
                 <p>Web-Services && Technical Services</p>
             </div>
         </div>
     </section>
     <section id="contactMe">
         <h1><u>Get In Touch</u></h1>
-            <span>Talk to me, I am here for you ...</span>
+        <span>Talk to me, I am here for you ...</span>
         <div class="contactme-right">
-            <form action="post">
-            <label>
-                Email
-                <input type="text">
-            </label>
-        </form>
+            <div class="form">
+                <form action="post">
+                    <div class="contact-form">
+                        <input type="text" placeholder="Enter your name">
+                        <input type="text" placeholder="Enter your email here">
+                        <input type="text" placeholder="enter your message here" id="msg">
+                    </div>
+                    <button id="btn">Send Your message</button>
+                </form>
+            </div>
         </div>
         <div class="contactme-left">
-
+            <label for="email">lambertbayiringire@gmail.com</label>
+            <label for="phone">+250785769168</label>
         </div>
-        
+
     </section>
+    <footer>
+        <h1>Find Me on</h1>
+        <div class="social-media-icons-footer">
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-google"></a>
+        </div>
+        <p>copyright @2022. All right reserved</p>
+    </footer>
 </body>
 
 </html>
