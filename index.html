@@ -14,18 +14,15 @@
 <body>
     <div class="header">
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
             <span class="logo">ba</span>
             <ul id="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contactMe">Contact Me</a></li>
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#services">Services</a></li>
+                <li class="nav-item"><a href="#contactMe">Contact Me</a></li>
             </ul>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
     </div>
     <section id="home">
@@ -165,14 +162,16 @@
         <h1><u>Get In Touch</u></h1>
         <span>Talk to me, I am here for you ...</span>
         <div class="contactme-right">
-            <div class="form">
-                <form action="post">
+            <div class="form" >
+                <form action="post" onsubmit="return GEEKFORGEEKS()" name="msgform">
                     <div class="contact-form">
-                        <input type="text" placeholder="Enter your name">
-                        <input type="text" placeholder="Enter your email here">
-                        <input type="text" placeholder="enter your message here" id="msg">
+                        <input type="text" placeholder="Enter your name" name="name">
+                        <input type="text" placeholder="Enter your email here" name="email">
+                        <input type="text" placeholder="enter your message here" name="msg" id="msg">
                     </div>
-                    <button id="btn">Send Your message</button>
+                    <input type="submit"value="send" name="Send Your message" id="btn"/>
+<!-- 
+                    <button id="btn">Send Your message</button> -->
                 </form>
             </div>
         </div>
@@ -191,6 +190,7 @@
         </div>
         <p>copyright @2022. All right reserved</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
