@@ -13,16 +13,20 @@
 
 <body>
     <div class="header">
-        <nav>
+        <nav class="nav-bar">
             <span class="logo">ba</span>
-            <ul id="menu">
-                <li class="nav-item"><a href="#home">Home</a></li>
-                <li class="nav-item"><a href="#about">About</a></li>
-                <li class="nav-item"><a href="#skills">Skills</a></li>
-                <li class="nav-item"><a href="#services">Services</a></li>
-                <li class="nav-item"><a href="#contactMe">Contact Me</a></li>
+            <ul id="menu" class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contactMe" class="nav-link">Contact Me</a></li>
             </ul>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </div>
     <section id="home">
@@ -81,36 +85,37 @@
         </div>
     </section>
     <section id="skills">
-        <h1>Skills</h1>
-        <span>My technical Skills</span>
-        <div class="skills-left">
-            <h3>{}Front-End</h3>
-            <h4>2+ years of experience</h6>
-                <div class="skill">
-                    <div class="progress-bar-container">
-                        <h2>HTML&CSS</h2>
-                        <div class="progress-bar">
-                            <span class="percentage c"></span>85%
+        <div class="skills">
+            <h1>Skills</h1>
+            <span>My technical Skills</span>
+            <div class="skills-left">
+                <h3>{}Front-End</h3>
+                <h4>2+ years of experience</h6>
+                    <div class="skill">
+                        <div class="progress-bar-container">
+                            <h2>HTML&CSS</h2>
+                            <div class="progress-bar">
+                                <span class="percentage c"></span>85%
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="progress-bar-container">
-                        <h2>JavaScript</h2>
-                        <div class="progress-bar">
-                            <span class="percentage java"></span>75%
+                        <div class="progress-bar-container">
+                            <h2>JavaScript</h2>
+                            <div class="progress-bar">
+                                <span class="percentage java"></span>75%
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="progress-bar-container">
-                        <h2>ReactJs</h2>
-                        <div class="progress-bar">
-                            <span class="percentage python"></span>62%
+                        <div class="progress-bar-container">
+                            <h2>ReactJs</h2>
+                            <div class="progress-bar">
+                                <span class="percentage python"></span>62%
+                            </div>
                         </div>
+
+
                     </div>
-
-
-                </div>
-        </div>
+            </div>
         </div>
         <div class="skills-right">
             <h3>{}Back-End</h3>
@@ -137,6 +142,7 @@
                     </div>
                 </div>
         </div>
+        </div>
     </section>
     <section id="services">
         <h3>Services</h3>
@@ -161,25 +167,26 @@
     <section id="contactMe">
         <h1><u>Get In Touch</u></h1>
         <span>Talk to me, I am here for you ...</span>
-        <div class="contactme-right">
-            <div class="form" >
-                <form action="post" onsubmit="return GEEKFORGEEKS()" name="msgform">
-                    <div class="contact-form">
-                        <input type="text" placeholder="Enter your name" name="name">
-                        <input type="text" placeholder="Enter your email here" name="email">
-                        <input type="text" placeholder="enter your message here" name="msg" id="msg">
-                    </div>
-                    <input type="submit"value="send" name="Send Your message" id="btn"/>
-<!-- 
+        <div class="bottom-form">
+            <div class="contactme-right">
+                <div class="form">
+                    <form action="" onsubmit="return GEEKFORGEEKS()" name="msgform">
+                        <div class="contact-form">
+                            <input type="text" placeholder="Enter your name" name="name">
+                            <input type="text" placeholder="Enter your email here" name="email">
+                            <input type="text" placeholder="enter your message here" name="msg" id="msg">
+                        </div>
+                        <input type="submit" value="send" name="Send Your message" id="btn" />
+                        <!-- 
                     <button id="btn">Send Your message</button> -->
-                </form>
+                    </form>
+                </div>
+            </div>
+            <div class="contactme-left">
+                <label for="email">lambertbayiringire@gmail.com</label>
+                <label for="phone">+250785769168</label>
             </div>
         </div>
-        <div class="contactme-left">
-            <label for="email">lambertbayiringire@gmail.com</label>
-            <label for="phone">+250785769168</label>
-        </div>
-
     </section>
     <footer>
         <h1>Find Me on</h1>
